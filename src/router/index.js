@@ -14,6 +14,11 @@ const routes = [
     component: () => import("@/views/ContactEdit.vue"),
     props: true, // Truyền params thành props
   },
+  {
+    path: "/contacts/add",
+    name: "contact.add",
+    component: () => import("@/views/ContactAdd.vue"),
+  },
 
   {
     path: "/:pathMatch(.*)*",
